@@ -1,0 +1,451 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e8f5e9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1); /* glass effect */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* spacing between menu items */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+ 
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li {
+  padding: 8px 12px;
+  background-color: white;
+  border-left: 3px solid #33aa55;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.nav-links li a {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: 500;
+  color: #222;
+  transition: all 0.3s ease;
+}
+
+.nav-links li:hover {
+  transform: scale(1.05);
+  background-color: #d6f5e3;
+}
+
+header {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #a5d6a7;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #388e3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 5px solid #66bb6a;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #a5d6a7;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill span {
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.bar {
+  width: 100%;
+  background: #e0e0e0;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar .fill {
+  height: 100%;
+  background: #4caf50; /* light green */
+  width: 0%;
+  animation: fillBar 2s forwards;
+  border-radius: 10px;
+}
+
+@keyframes fillBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: inherit;
+  }
+}
+.bar {
+  width: 100%;
+  background: #e0e0e0;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar .fill {
+  width: 0%;  /* Start empty */
+  height: 100%;
+  background: #4caf50;
+  border-radius: 10px;
+  transition: width 2s ease; /* Animate on change */
+}
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode .navbar {
+  background-color: #1f1f1f;
+}
+
+.dark-mode .bar {
+  background: #333;
+}
+
+.dark-mode .bar .fill {
+  background: #00c853;
+}
+
+.dark-mode footer {
+  background-color: #1f1f1f;
+  color: #ccc;
+}
+
+/* Toggle Button Style */
+.toggle-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 20px;
+  cursor: pointer;
+}
+.dark-mode #experience {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+/* Fix experience list items in dark mode */
+.dark-mode #experience ul li {
+  background-color: #2a2a2a; /* dark background */
+  color: #e0e0e0; /* light text */
+  border: 1px solid #444;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.dark-mode h2 {
+  color: #00e676; /* Light green shade */
+}
+
+.dark-mode h2 {
+  color: #00e676;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+/* === LIGHT MODE SECTION TITLES === */
+#about h2 {
+  color: #2e7d32; /* dark green */
+}
+
+#skills h2 {
+  color: #1565c0; /* blue */
+}
+
+#experience h2 {
+  color: #6a1b9a; /* purple */
+}
+
+#projects h2 {
+  color: #ef6c00; /* orange */
+}
+
+#contact h2 {
+  color: #c62828; /* red */
+}
+
+
+/* === DARK MODE SECTION TITLES === */
+.dark-mode #about h2 {
+  color: #66bb6a; /* light green */
+}
+
+.dark-mode #skills h2 {
+  color: #42a5f5; /* light blue */
+}
+
+.dark-mode #experience h2 {
+  color: #ba68c8; /* soft violet */
+}
+
+.dark-mode #projects h2 {
+  color: #ffb74d; /* light orange */
+}
+
+.dark-mode #contact h2 {
+  color: #ef5350; /* soft red */
+}
+.dark-mode h2 {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+/* Header Text Styling */
+.hello-text {
+  color: #333; /* dark gray or black for light mode */
+  font-weight: 400;
+}
+
+.name-highlight {
+  color: #00796b; /* teal */
+  font-weight: bold;
+}
+
+/* Typed.js text styles */
+.typed-highlight {
+  color: #d32f2f; /* red shade */
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+/* Dark Mode Overrides */
+.dark-mode .hello-text {
+  color: #eeeeee;
+}
+
+.dark-mode .name-highlight {
+  color: #26c6da; /* bright cyan */
+}
+
+.dark-mode .typed-highlight {
+  color: #ffab40; /* orange-yellow */
+}
+
+/* ==== PROJECTS SECTION ==== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.project-card p {
+  color: #555;
+  line-height: 1.5;
+  margin: 10px 0 0;
+}
+
+/* Button inside project card (if added) */
+.project-card .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #00796b;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-card .btn:hover {
+  background-color: #004d40;
+}
+
+/* ==== DARK MODE ==== */
+.dark-mode .project-card {
+  background-color: #1f1f1f;
+  color: #eee;
+  border: 1px solid #333;
+}
+
+.dark-mode .project-card h3 {
+  color: #66bb6a;
+}
+
+.dark-mode .project-card p {
+  color: #ccc;
+}
+
+.dark-mode .project-card .btn {
+  background-color: #26a69a;
+}
+
+.dark-mode .project-card .btn:hover {
+  background-color: #00796b;
+}
+
+.project-thumb {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  color: #333;
+  position: relative;
+}
+
+.modal-content img.modal-img {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.modal .close {
+  position: absolute;
+  top: 10px; right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+}
+
+.modal .close:hover {
+  color: red;
+}
+
+/* Dark mode support */
+.dark-mode .modal-content {
+  background-color: #222;
+  color: #eee;
+}
+.modal-content img.modal-img {
+  width: 45%;
+  margin: 10px;
+  display: inline-block;
+}
+.modal-img {
+  width: 40%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+

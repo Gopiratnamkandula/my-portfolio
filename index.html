@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K.V.V. Gopi Ratnam - Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">Gopi Ratnam</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="resume.pdf" download>Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="toggle-dark" class="toggle-btn">🌙</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+
+  <header>
+    <div class="container">
+      <img src="img.png" alt="Profile Picture" class="avatar" />
+      <h1>
+        <span class="hello-text">Hello, I'm</span>
+        <span class="name-highlight">K.V.V. Gopi Ratnam</span>
+      </h1>
+      <span id="typed-text" class="typed-highlight"></span>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+    
+<p>
+  Hello! I'm <strong>K.V.V. Gopi Ratnam</strong>, a recent B.Tech graduate in Electronics and Communication Engineering from Kakinada, Andhra Pradesh. While my academic journey began with circuits and embedded systems, my heart was captured by coding and web development.
+</p>
+
+<p>
+  During my final year, I started exploring the world of software. I’ve self-learned <strong>HTML, CSS, JavaScript, and C</strong>, and built multiple mini-projects to apply what I learned. I also completed an internship as an Assistant Backend Developer and HTML Developer Intern at LGIS, where I developed a deeper understanding of real-world tech applications.
+</p>
+
+<p>
+  I’m highly motivated, quick to learn, and always ready to take on new challenges. My dream is to become a Web Developer and grow in the IT field. I'm currently seeking a fresher role in a startup or software company where I can apply my skills, learn from experienced teams, and build meaningful projects.
+</p>
+
+<p>
+  Outside of tech, I love creative work like editing and organizing content. I believe in continuous learning, and I’m not afraid of starting small — because I believe consistent effort leads to success.
+</p>
+
+<blockquote>
+  <em>"Start where you are. Use what you have. Do what you can."</em>
+</blockquote>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+  
+      <div class="skill">
+        <span>HTML</span>
+        <div class="bar">
+          <div class="fill" data-width="85%"></div>
+        </div>
+      </div>
+  
+      <div class="skill">
+        <span>CSS</span>
+        <div class="bar">
+          <div class="fill" data-width="85%"></div>
+        </div>
+      </div>
+  
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="bar">
+          <div class="fill" data-width="85%"></div>
+        </div>
+      </div>
+  
+      <div class="skill">
+        <span>C Programming</span>
+        <div class="bar">
+          <div class="fill" data-width="85%"></div>
+        </div>
+      </div>
+  
+      <div class="skill">
+        <span>MongoDB</span>
+        <div class="bar">
+          <div class="fill" data-width="85%"></div>
+        </div>
+      </div>
+  
+      <div class="skill">
+        <span>Node.js</span>
+        <div class="bar">
+          <div class="fill" data-width="85%"></div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+    </div>
+  </section>
+  
+
+  <section id="experience">
+    <div class="container">
+      <h2>Internship Experience</h2>
+      <p><strong>Assistant Backend Developer | Amaravathi Soft Innovations</strong><br>
+        <em>june 2024 – Aug 2024</em></p>
+      <ul>
+        <li>Worked on backend development using JavaScript and Node.js.</li>
+        <li>Handled basic database operations using MongoDB (CRUD).</li>
+        <li>Supported API integration, token-based authentication, and server logic.</li>
+      </ul>
+      <p><strong>HTML Developer | LGIS</strong><br>
+        <em>Mar 2022 – Sep 2022</em></p>
+        <ul>
+          <li>Created responsive web pages using HTML and CSS.</li>
+          <li>Fixed layout and alignment issues to support all browsers and devices.</li>
+          <li>Collaborated with UI designers to implement clean and user-friendly interfaces.</li>
+        </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-card">
+       
+        <h3>🔧 Sign-to-Voice Converter</h3>
+        <p>A wearable gesture-to-speech system for the speech impaired using ESP32 + APR33A3.</p>
+        <button class="btn" onclick="openModal('modal1')">More Info</button>
+      </div>
+      
+      <div class="project-card">
+  <h3>To-Do List Web App 💻</h3>
+  <p>A simple and responsive task manager built using HTML, CSS, and JavaScript. It allows users to add, complete, and delete tasks. LocalStorage is used to store tasks even after reloading.</p>
+</div>
+      
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: kandulagopiratnam686@gmail.com</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/gopiratnam-kandula-b4a111272" target="_blank">www.linkedin.com/in/gopiratnam-kandula-b4a111272</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 K.V.V. Gopi Ratnam</p>
+  </footer>
+<!-- Add Typed.js library -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+  var typed = new Typed("#typed-text", {
+    strings: [
+      "Aspiring Software Developer",
+      "Frontend Learner",
+      "Fast Problem Solver",
+      "Creative Thinker"
+    ],
+    typeSpeed: 50,
+    backSpeed: 30,
+    backDelay: 1000,
+    loop: true
+  });
+</script>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const bars = document.querySelectorAll(".bar .fill");
+        bars.forEach(bar => {
+          const target = bar.getAttribute("data-width");
+          bar.style.width = target;
+        });
+        observer.unobserve(entry.target); // run only once
+      }
+    });
+  });
+
+  const skillSection = document.querySelector("#skills");
+  if (skillSection) {
+    observer.observe(skillSection);
+  }
+</script>
+<script>
+  const toggleBtn = document.getElementById("toggle-dark");
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    toggleBtn.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+  });
+</script>
+
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h2>Sign-to-Voice Converter</h2>
+    <p>This hardware project uses flex sensors to capture hand gestures, processes them with ESP32, and produces voice output using APR33A3 voice module. An LCD provides text display for the gesture.</p>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+      <img src="images/signproject.jpg" class="modal-img" alt="Gesture Glove" />
+      <img src="images/signproject2.jpg" class="modal-img" alt="Speaker Output" />
+    </div>
+    <div style="text-align: center; margin-top: 10px;">
+      <small><em>Gesture glove with flex sensors → Speaker box with voice playback</em></small>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openModal(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+
+  // Optional: Close modal if user clicks outside
+  window.onclick = function(event) {
+    const modals = document.querySelectorAll(".modal");
+    modals.forEach(modal => {
+      if (event.target === modal) modal.style.display = "none";
+    });
+  }
+</script>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
