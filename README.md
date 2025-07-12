@@ -37,7 +37,8 @@ This project showcases my academic background, internships, skills, and projects
 
 ## 🔗 Live Portfolio Site
 
-👉 [Click to view my live portfolio](https://github.com/Gopiratnamkandula/my-portfolio))
+[Click to view my live portfolio](https://gopiratnamkandula.github.io/my-portfolio/)
+
 
 ---
 
