@@ -23,6 +23,7 @@ This project showcases my academic background, internships, skills, and projects
 - Node.js, MongoDB (for backend in internship)
 - C, Python
 - Arduino IDE (for hardware project)
+- ESP 32
 - Visual Studio Code, Postman
 
 ## 📂 Folder Structure
@@ -36,7 +37,7 @@ This project showcases my academic background, internships, skills, and projects
 
 ## 🔗 Live Portfolio Site
 
-👉 [Click to view my live portfolio](https://yourusername.github.io/portfolio/)
+👉 [Click to view my live portfolio](https://github.com/Gopiratnamkandula/my-portfolio))
 
 ---
 
